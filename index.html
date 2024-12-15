@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Combustion et Ses Dangers</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Graphiques -->
+</head>
+<body>
+    <!-- Menu de navigation -->
+    <nav>
+        <ul>
+            <button class="button" id="nlButton"><strong>Home</strong></button>
+            <button class="button" id="homeButton"><strong>Dangers</strong></button>
+            <button class="button" id="fsButton"><strong>Graphique</strong></button>
+            <button class="button" id="nl1Button"><strong>Prévention</strong></button>
+            <button class="button" id="home1Button"><strong>Vidéo</strong></button>
+            <button class="button" id="fs1Button"><strong>Quiz</strong></button>
+        </ul>
+    </nav>
+    <section class="main" id="mainSection">
+        <h5 class="numbers"><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span><span>D</span><span>R</span><span>A</span><span>D</span><span>A</span><span>R</span><span>A</span><span>Y</span><span>A</span><span>N</span><span>E</span><span>D</span><span>O</span><span>U</span><span>R</span><span>A</span><span>I</span><span>D</span><span>I</span></h5>
+    </section>
+    <div class="home">
+        <header class="parallax">
+            <h1>La Combustion des Matériaux Organiques et Ses Dangers</h1>
+            <p>Comprendre les risques et prévenir les dangers</p>
+        </header>
+    </div>
+
+    <!-- Section d'introduction -->
+    <section id="intro" class="intro">
+        <h1>Qu'est-ce que la combustion ?</h1>
+        <div class="bigcard">
+            <p>La combustion est une réaction chimique entre un matériau organique et l'oxygène, produisant chaleur et lumière. Lors de cette réaction, des gaz toxiques et des particules fines peuvent être libérés, posant des risques pour la santé et l'environnement.</p>
+        </div>
+        <div class="FS" id="fsSection">
+            <h1>TYPES DE COMBUSTIONS DES MATERIAUX ORGANIQUES COMME LE PAPIER, CARTON, BOIS</h1>
+            <div class="container">
+                <div class="bigcard" >
+                    <div class="content">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <h3>01</h3>
+                        <h1>Combustion incomplete</h1>
+                        <p>La combustion incomplète se produit lorsqu'il n'y a pas une quantité suffisante d'oxygène (O₂) pour permettre une combustion complète. Ce processus produit des résidus tels que le carbone (sous forme de suie), qui est nocif, et du monoxyde de carbone (CO), un gaz extrêmement toxique.
+
+                            Le CO se lie à l'hémoglobine dans le sang, remplaçant l'oxygène, ce qui peut entraîner des intoxications graves voire mortelles pour l'homme.</p>
+                    </div>
+                <div></div></div></div>
+            </div>
+            <div class="container">
+                <div div class="bigcard">
+                    <div class="content">
+                        <i class="fa-solid fa-scale-unbalanced"></i>
+                        <h3>02</h3>
+                        <h1>Combustion complete</h1>
+                        <p>La combustion complète se produit lorsque la quantité d'oxygène (O₂) disponible est suffisante pour que la réaction chimique se déroule entièrement. Ce processus produit principalement du dioxyde de carbone (CO₂) et de l'eau (H₂O). Le CO₂, en tant que gaz à effet de serre, contribue à l'augmentation du réchauffement climatique.
+                        </p>
+                    </div>
+                <div ></div></div></div>
+            </div>
+    </section>
+
+    <!-- Section des dangers -->
+    <section id="dangers" class="dangers">
+        <h1>Les Dangers de la Combustion</h1>
+        <div class="bigcard">
+            <h1>Quelques produits de la combustion des materiaux Organiques</h1>
+            <h3>CO (monoxyde de carbone)</h3>
+            <p>Le monoxyde de carbone est un gaz incolore, inodore et non irritant, mais extrêmement toxique. Il se lie à l'hémoglobine, remplaçant l'oxygène (O₂) dans le sang, ce qui peut entraîner des intoxications graves. Le CO est produit lors des combustions incomplètes de matériaux organiques ou de plastiques tels que le PVC, le PS ou le PE.</p>
+            <h3>CO₂ (dioxyde de carbone)</h3>
+            <p>Le dioxyde de carbone est un gaz qui peut favoriser l'absorption de substances toxiques. Sa concentration dans l'atmosphère a augmenté, notamment en raison des combustions de matériaux organiques. Le CO₂ est également reconnu comme un gaz à effet de serre, contribuant au réchauffement climatique.</p>
+            <h3>Oxydes d'azote (NO et NO₂)</h3>
+            <p>Ces deux oxydes provoquent des contractions musculaires involontaires, pouvant être générales ou localisées. Ils sont souvent émis lors des combustions de combustibles fossiles ou de certains matériaux organiques.</p>
+            <h3>HCI (chlorure d'hydrogene)</h3>
+            <p>Le chlorure d'hydrogène est un gaz toxique qui attaque les poumons. Il est principalement libéré lors de la combustion du PVC.</p>
+            <h3>HCN (le cyanure d'hydrogene)</h3>
+            <p>Le cyanure d'hydrogène est un gaz mortel pour l'homme, produit principalement lors de la combustion du polyuréthane.</p>
+        </div>
+        <div class="bigcard">
+            <h1>Les Dangers de la Combustion</h1>
+            <div class="danger-item">
+                <h3>Production de Gaz Toxiques</h3>
+                <p>Lors de la combustion, des gaz dangereux tels que le monoxyde de carbone (CO), un gaz inodore et mortel, et le dioxyde de carbone (CO₂) sont émis. Le CO peut causer des intoxications graves chez l'homme, tandis que le CO₂ est un gaz à effet de serre, contribuant au changement climatique. Ces émissions sont également responsables de nombreuses maladies respiratoires.</p>
+            </div>
+            <div class="danger-item">
+                <h3>Impact sur l'Environnement</h3>
+                <p>La combustion de matériaux organiques libère des particules fines dans l’atmosphère. Ces particules provoquent une pollution de l’air, avec des conséquences graves pour la faune, la flore, et la santé humaine. Elles peuvent également altérer la qualité des sols et des cours d’eau, perturbant les écosystèmes.</p>
+            </div>
+            <div class="danger-item">
+                <h3>Risques d'Incendie</h3>
+                <p>Des matériaux tels que le bois, les déchets alimentaires, ou les produits chimiques peuvent être à l’origine d’incendies incontrôlés, entraînant des destructions de biens matériels et mettant en danger des vies humaines. Ces incendies libèrent en outre de grandes quantités de gaz toxiques, amplifiant les impacts environnementaux.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Graphique sur l'impact environnemental -->
+    <section id="graphiques" class="graphique">
+        <h1>Graphiques Interactifs</h1>
+        <div>
+            <canvas id="emissionsGraph"></canvas>
+        </div>
+        <div>
+            <canvas id="proportionsGraph"></canvas>
+        </div>
+        <script>
+            const ctx1 = document.getElementById('emissionsGraph').getContext('2d');
+            const emissionsGraph = new Chart(ctx1, {
+                type: 'bar',
+                data: {
+                    labels: ['CO2', 'Particules Fines', 'CO'],
+                    datasets: [{
+                        label: 'Emissions en tonnes',
+                        data: [50, 30, 20],
+                        backgroundColor: ['rgba(50, 205, 50, 0.6)', 'rgba(255, 99, 132, 0.6)', 'rgba(54, 162, 235, 0.6)'],
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            position: 'top',
+                        }
+                    }
+                }
+            });
+
+            const ctx2 = document.getElementById('proportionsGraph').getContext('2d');
+            const proportionsGraph = new Chart(ctx2, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Santé', 'Environnement', 'Incendies'],
+                    datasets: [{
+                        label: 'Impact de la Combustion',
+                        data: [40, 35, 25],
+                        backgroundColor: ['#32CD32', '#FF6384', '#FFCE56'],
+                    }]
+                },
+                options: {
+                    responsive: true,
+                }
+            });
+        </script>
+    </section>
+
+
+
+
+    <!-- Section des mesures de prévention interactive -->
+    <section id="prevention" class="prevention">
+        <h3>Mesures de Prévention</h3>
+        <h3>Voici quelques mesures simples mais essentielles pour éviter les dangers liés à la combustion des matériaux organiques :</h3>
+        <ul>
+            <h3>Installer des détecteurs de fumée dans chaque pièce.</h3>
+            <h3>Éviter d'accumuler des matériaux flammables près des sources de chaleur.</h3>
+            <h3>Utiliser des équipements appropriés pour la gestion des déchets organiques.</h3>
+        </ul>
+        <a href="https://www.universalis.fr/encyclopedie/incendies/6-la-prevention/">
+            <button class="prevent-button">Simuler une prévention incendie</button>
+        </a>
+    </section>
+
+    <!-- Section vidéo explicative -->
+    <section id="video" class="video">
+        <h1>Comprendre la Combustion</h1>
+        <p>Voici une vidéo expliquant en détail le processus de combustion et ses risques :</p>
+        <iframe width="560" height="315" src="https://youtu.be/WS5mG0Ggx-I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <!-- Quiz interactif -->
+    <section id="quiz" class="quiz">
+        <h1>Testez vos connaissances !</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>Quel gaz est principalement produit lors de la combustion du carbone ?</p>
+                <label><input type="radio" name="question1" value="CO2"> CO²</label><br>
+                <label><input type="radio" name="question1" value="O2"> O²</label><br>
+                <label><input type="radio" name="question1" value="CO"> CO</label><br>
+            </div>
+            <div class="question">
+                <p>Quelle est une mesure préventive importante contre les incendies ?</p>
+                <label><input type="radio" name="question2" value="Detecteur"> Installer des détecteurs de fumée</label><br>
+                <label><input type="radio" name="question2" value="Ventilation"> Augmenter la ventilation</label><br>
+                <label><input type="radio" name="question2" value="Accumulation"> Accumuler des matériaux inflammables</label><br>
+            </div>
+            <div class="question">
+                <p>Quel est le gaz le plus toxique produit lors d'une combustion incomplete ?</p>
+                <label><input type="radio" name="question3" value="O2"> O²</label><br>
+                <label><input type="radio" name="question3" value="CO">CO</label><br>
+                <label><input type="radio" name="question3" value="HCOON"> HCOON</label><br>
+            </div>
+            <div class="question">
+                <p>Le HCN est un gaz non toxique.</p>
+                <label><input type="radio" name="question4" value="vrai"> Vrai</label><br>
+                <label><input type="radio" name="question4" value="faux">Faux</label><br>
+            </div>
+            <div class="question">
+                <p>La combustion incomplete s'effectue quand il y a un manque d'O².</p>
+                <label><input type="radio" name="question5" value="vrai"> Vrai</label><br>
+                <label><input type="radio" name="question5" value="faux">Faux</label><br>
+            </div>
+            <button type="submit">Soumettre</button>
+        </form>
+        <p id="quizResult"></p>
+    </section>
+
+    <div class="radio" id="ratingSection">       
+        <input value="5" name="rating" type="radio" id="rating-5">
+    <label title="5 stars" for="rating-5">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+        </svg>
+    </label>
+    <input value="4" name="rating" type="radio" id="rating-4">
+    <label title="4 stars" for="rating-4">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+        </svg>
+    </label>
+    <input value="3" name="rating" type="radio" id="rating-3">
+    <label title="3 stars" for="rating-3">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+        </svg>
+    </label>
+    <input value="2" name="rating" type="radio" id="rating-2">
+    <label title="2 stars" for="rating-2">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+        </svg>
+    </label>
+    <input value="1" name="rating" type="radio" id="rating-1">
+    <label title="1 stars" for="rating-1">
+        <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512">
+            <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path>
+        </svg>
+    </label>
+
+    <!-- Repeat similar blocks for other ratings down to 1 star -->
+
+    <div class="rating-counts" id="ratingCounts">
+        <p>5 Stars: <span id="count-5">3</span></p>
+        <p>4 Stars: <span id="count-4">0</span></p>
+        <p>3 Stars: <span id="count-3">0</span></p>
+        <p>2 Stars: <span id="count-2">0</span></p>
+        <p>1 Star: <span id="count-1">0</span></p>
+    </div>
+    <button class="button" id="resetButton">Reset Ratings</button>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Combustion et Dangers | Tous droits réservés</p>
+    </footer>
+
+    <!-- Ajouter un script JS pour le quiz -->
+    <script>
+        document.getElementById('quizForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                const answers = new FormData(this);
+                let score = 0;
+                if (answers.get('question1') === 'CO2') score++;
+                if (answers.get('question2') === 'Detecteur') score++;
+                if (answers.get('question3') === 'CO') score++;
+                if (answers.get('question4') === 'faux') score++;
+                if (answers.get('question5') === 'vrai') score++;
+                document.getElementById('quizResult').textContent = `Votre score est de ${score}/5.`;
+            });
+        const form = document.getElementById('quizForm');
+        const result = document.getElementById('quizResult');
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('homeButton').addEventListener('click', function() {
+                document.getElementById('dangers').scrollIntoView({ behavior: 'smooth' });
+            });
+    
+            document.getElementById('nlButton').addEventListener('click', function() {
+                document.getElementById('intro').scrollIntoView({ behavior: 'smooth' });
+            });
+    
+            document.getElementById('fsButton').addEventListener('click', function() {
+                document.getElementById('graphiques').scrollIntoView({ behavior: 'smooth' });
+            });
+            document.getElementById('home1Button').addEventListener('click', function() {
+                document.getElementById('video').scrollIntoView({ behavior: 'smooth' });
+            });
+    
+            document.getElementById('nl1Button').addEventListener('click', function() {
+                document.getElementById('prevention').scrollIntoView({ behavior: 'smooth' });
+            });
+    
+            document.getElementById('fs1Button').addEventListener('click', function() {
+                document.getElementById('quiz').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            document.getElementById('home1').addEventListener('click', function() {
+                document.getElementById('main').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script>VanillaTilt.init(document.querySelectorAll(".cards"),{
+    max: 25,
+    speed: 400,
+    glare: true,  // if it should have a "glare" effect
+    "max-glare": 0.5,      // the maximum "glare" opacity (1 = 100%, 0.5 = 50%)
+    });</script>
+<script>
+    let numbers = document.querySelector('.numbers');
+    let numString = numbers.textContent;
+    let splitNum = numString.split("");
+
+    numbers.textContent = "";
+    for (let i = 0; i < splitNum.length; i++) {
+        numbers.innerHTML += "<span>" + splitNum[i] + "</span>";
+    }
+</script>
+<script src="script.js"></script>
+<script>
+    const ratingCounts = {
+        5: parseInt(localStorage.getItem('count-5')) || 0,
+        4: parseInt(localStorage.getItem('count-4')) || 0,
+        3: parseInt(localStorage.getItem('count-3')) || 0,
+        2: parseInt(localStorage.getItem('count-2')) || 0,
+        1: parseInt(localStorage.getItem('count-1')) || 0
+    };
+
+    Object.keys(ratingCounts).forEach(star => {
+        document.getElementById(`count-${star}`).textContent = ratingCounts[star];
+    });
+
+    document.querySelectorAll('input[name="rating"]').forEach(input => {
+        input.addEventListener('change', function () {
+            const rating = this.value;
+            ratingCounts[rating]++;
+            localStorage.setItem(`count-${rating}`, ratingCounts[rating]);
+            document.getElementById(`count-${rating}`).textContent = ratingCounts[rating];
+        });
+    });
+
+    // Reset button functionality
+    document.getElementById('resetButton').addEventListener('click', function () {
+        Object.keys(ratingCounts).forEach(star => {
+            ratingCounts[star] = 0;
+            localStorage.removeItem(`count-${star}`);
+            document.getElementById(`count-${star}`).textContent = 0;
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+// Add click event listener for all buttons
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        const buttonText = this.textContent.trim(); // Get the button text
+        // Send event to Google Analytics
+        analytics.logEvent('button_click', {
+            button_name: buttonText
+        });
+    });
+});
+});
+</script>
+<script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyCKZcmAxj2XPXy_FV9wAcKEGJq8XklV5LI",
+  authDomain: "project-fr-14178.firebaseapp.com",
+  projectId: "project-fr-14178",
+  storageBucket: "project-fr-14178.firebasestorage.app",
+  messagingSenderId: "308493760759",
+  appId: "1:308493760759:web:bb03e5491667cd23e97bf2",
+  measurementId: "G-WBG3M414XJ" // Make sure this is correct
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-WBG3M414XJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-WBG3M414XJ');
+</script>
+<div id="disqus_thread">    
+</div>
+<script>
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+    var disqus_config = function () {
+        this.page.url = window.location.href;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = window.location.pathname; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() {  // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://projectfr.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+</body>
+</html>
